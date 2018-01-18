@@ -38,3 +38,11 @@ html
     background-color: rgb(173, 173, 173);
 }
 
+.parallax { 
+    background-image: url("https://images.unsplash.com/photo-1495511623436-ba44aaee07cf?auto=format&fit=crop&w=1502&q=80");
+    height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
