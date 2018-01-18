@@ -10,8 +10,9 @@ html
     letter-spacing: -1px; 
 }
 
-.navbar
+.section-header
 {
-    position: fixed; 
-    
+    font-size: 32px; 
+    text-align: center; 
+    text-decoration: underline;
 }
