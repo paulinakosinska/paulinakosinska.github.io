@@ -89,11 +89,8 @@ nav
 #number-one
 {
     background-color: #acacac; 
-    margin: 10px; 
-    height: 300px;
-    width: 300px; 
 }
-
+    
 #number-one:hover
 {
     background-color: #eeeeee; 
@@ -103,9 +100,6 @@ nav
 #number-two
 {
     background-color: #e1e1e1; 
-    margin: 10px; 
-    height: 300px;
-    width: 300px;
 }
 
 #number-two:hover
@@ -117,9 +111,6 @@ nav
 #number-three
 {
     background-color: #e1e1e1; 
-    margin: 10px; 
-    height: 300px;
-    width: 300px;
 }
 
 #number-three:hover
@@ -130,10 +121,7 @@ nav
 
 #number-four
 {
-    background-color: #acacac; 
-    margin: 10px; 
-    height: 300px;
-    width: 300px;
+    background-color: #acacac;
 }
 
 #number-four:hover
@@ -144,11 +132,9 @@ nav
 
 #number-five
 {
-   display: inline;
     background-color: #ba6b6c; 
-    margin: 10px; 
-    height: 300px;
-    width: 300px;
+    
+    
 }
 
 #number-five:hover
@@ -157,7 +143,58 @@ nav
     cursor: pointer;
 }
 
+.tile
+{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
 
+    // transition animation
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+}
+
+.tile-sm
+{
+    height: 200px;
+}
+
+.tile-lg
+{
+    height: 430px;
+}
+
+.btn-live
+{
+    background-color: transparent; 
+    border-color: #7d7d7d; 
+    color: #575757; 
+    width: 70px; 
+}
+
+.btn-live:hover
+{
+    background-color: #ba6b6c; 
+    border-color: #ba6b6c; 
+    color: #575757; 
+}
+
+.btn-code
+{
+    width: 70px; 
+    background-color: transparent; 
+    border-color: #7d7d7d; 
+    color: #575757; 
+}
+
+.btn-code:hover
+{
+    background-color: #7d7d7d; 
+    border-color: #7d7d7d; 
+    color: #575757; 
+}
 
 .contact-me
 {

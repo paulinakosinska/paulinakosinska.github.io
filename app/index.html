@@ -10,6 +10,14 @@
     <meta name="keywords" content="zamów, stronę, tworzenie, www, programista, portfolio, php, javascript, html, css, WordPress, bootstrap, git"
     />
 
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
     <!-- font -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
@@ -19,41 +27,41 @@
 
 <body>
     <main>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <span class="navbar-brand" href="#">PAULINA
-                    <strong>KOSIŃSKA</strong>
-                </span>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <span class="navbar-brand" href="#">PAULINA
+                <strong>KOSIŃSKA</strong>
+            </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-            <section class="jumbotron">
-                <h1 class="display-4">Paulina Kosińska</h1>
-                <p class="lead">Junior Front-end Developer</p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg btn-outline-dark" href="#project" role="button ">Check out my projects</a>
-                </p>
-            </section>
+        <section class="jumbotron">
+            <h1 class="display-4">Paulina Kosińska</h1>
+            <p class="lead">Junior Front-end Developer</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg btn-outline-dark" href="#projects" role="button ">Check out my projects</a>
+            </p>
+        </section>
 
         <section class="container">
             <header class="section-header">About me</header>
@@ -119,31 +127,40 @@
 
         </div>
 
-        <section id="projects">
+        <section class="container" id="projects">
             <header class="section-header">Projects</header>
             <hr class="my-4">
-            <div>
-                <div class="row">
-                    <div class="col-md-3 col-lg-3" id="number-one">
-                        Projekt #1
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="tile tile-sm" id="number-one">
+                                <button type="button" class="btn btn-live">LIVE</button>
+                                <button type="button" class="btn btn-code">CODE</button>
+                            </div>
+                            <div class="tile tile-sm" id="number-two">
+                                <button type="button" class="btn btn-live">LIVE</button>
+                                <button type="button" class="btn btn-code">CODE</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="tile tile-sm" id="number-three">
+                                <button type="button" class="btn btn-live">LIVE</button>
+                                <button type="button" class="btn btn-code">CODE</button>
 
-                    </div>
-                    <div class="col-md-3 col-lg-3" id="number-two">
-                        Projekt #2
+                            </div>
+                            <div class="tile tile-sm" id="number-four">
+                                <button type="button" class="btn btn-live">LIVE</button>
+                                <button type="button" class="btn btn-code">CODE</button>
 
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3 col-lg-3" id="number-three">
-                        Projekt #3
-
-                    </div>
-                    <div class="col-md-3 col-lg-3" id="number-four">
-                        Projekt #4
-
-                    </div>
-                    <div class="col-md-3 col-lg-3" id="number-five" >
-                        Projekt #5
+                <div class="col-lg-6">
+                    <div class="tile tile-lg" id="number-five">
+                        <button type="button" class="btn btn-live">LIVE</button>
+                        <button type="button" class="btn btn-code">CODE</button>
 
                     </div>
                 </div>
