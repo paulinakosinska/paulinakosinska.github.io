@@ -85,11 +85,36 @@ nav {
     font-weight: 100;
     padding-bottom: 120px;
     padding-left: 50px;
+    text-align: center;
 }
 
 .brand-icons {
-    margin: 70px;
+    float: left;
     cursor: default;
+    padding: 10px;
+    margin: 40px;
+}
+
+.brand-icons > img
+{
+   opacity: 0.3;
+}
+
+.brand-icons:hover > img
+{
+    opacity: 1;
+}
+
+img
+{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.last-item
+{
+    clear: both;
 }
 
 .parallax {
