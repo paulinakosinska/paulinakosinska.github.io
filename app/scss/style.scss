@@ -1,5 +1,5 @@
-
 @import "node_modules/bootstrap/scss/bootstrap";
+
 html {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -12,44 +12,39 @@ nav {
 
 .brand-logo {
     font-size: 22px;
-    letter-spacing: -1px; 
+    letter-spacing: -1px;
 }
 
 #title-wraper {
     text-align: right;
 }
 
-#title
-{
+#title {
     font-weight: 100;
-    font-size: 62px; 
-    padding-top: 140px; 
+    font-size: 62px;
+    padding-top: 140px;
 }
 
-#subtitle
-{
+#subtitle {
     font-weight: 100;
 }
 
-.hero
-{
+.hero {
     text-align: center;
     height: 725px;
     background-image: url("/img/bg-img.jpg");
     background-size: cover;
 }
 
-.hero-btn
-{
-    margin: 150px; 
-    border-color: #575757; 
+.hero-btn {
+    margin: 150px;
+    border-color: #575757;
     color: #575757;
 }
 
-.hero-btn:hover
-{
+.hero-btn:hover {
     background-color: #575757;
-    color: #fff; 
+    color: #fff;
 }
 
 .btn {
@@ -82,38 +77,50 @@ nav {
 .skills {
     background-color: #e1e1e1;
     font-size: 32px;
-    font-weight: 100;
+    font-weight: 200;
     padding-bottom: 120px;
     padding-left: 50px;
     text-align: center;
 }
 
+.skills > span {
+    font-weight: 200;
+}
+
 .brand-icons {
-    float: left;
     cursor: default;
     padding: 10px;
-    margin: 40px;
+    // margin: 40px;
 }
 
-.brand-icons > img
-{
-   opacity: 0.3;
-}
-
-.brand-icons:hover > img
-{
-    opacity: 1;
-}
-
-img
-{
-    width: 40px;
+.brand-icons>img {
+    -moz-transition: all .8s ease-in;
+    -o-transition: all .8s ease-in;
+    -webkit-transition: all .8s ease-in;
+    transition: all .8s ease-in;
+    opacity: 0.3;
     height: 40px;
-    text-align: center;
+    width: 40px;
 }
 
-.last-item
-{
+.brand-icons:hover>img {
+    opacity: 1;
+    height: 80px;
+    width: 80px;
+}
+
+.brand-icons >span {
+    -moz-transition: all .8s ease-in;
+    -o-transition: all .8s ease-in;
+    -webkit-transition: all .8s ease-in;
+    transition: all .8s ease-in;
+}
+
+.brand-icons:hover>span {
+    opacity: .1;
+}
+
+.last-item {
     clear: both;
 }
 
@@ -126,10 +133,9 @@ img
     background-size: cover;
 }
 
-#particles-js
-{
-    height: 100%;
-    background-color: #ba6b6c; 
+#particles-js {
+    // height: 100%;
+    background-color: #ba6b6c;
 }
 
 #projects {
@@ -196,7 +202,7 @@ img
 }
 
 .tile-lg {
-   line-height: 430px;
+    line-height: 430px;
 }
 
 .btn-live {
@@ -272,13 +278,11 @@ img
     text-align: center;
 }
 
-a
-{
+a {
     color: #fff;
     text-align: right;
 }
 
-a:hover
-{
+a:hover {
     color: #eee;
 }
