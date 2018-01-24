@@ -262,7 +262,7 @@ nav {
     -o-transition-duration: 0.5s;
     color: #ef9a9a;
     margin-bottom: 95px;
-    padding-right: 50px;
+    padding: 25px;
 }
 
 #social-fb:hover {
@@ -295,4 +295,5 @@ a {
 
 a:hover {
     color: #eee;
+    text-decoration: none;
 }
