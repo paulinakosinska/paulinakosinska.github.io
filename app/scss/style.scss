@@ -1,5 +1,4 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-
 html {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -33,7 +32,7 @@ nav {
     text-align: center;
     background-image: url("/img/bg-img.jpg");
     background-size: cover;
-    min-height: 100vh; 
+    min-height: 100vh;
     min-width: 100vw;
 }
 
@@ -84,7 +83,7 @@ nav {
     padding-bottom: 120px;
 }
 
-.skills > span {
+.skills>span {
     font-weight: 200;
 }
 
@@ -93,6 +92,8 @@ nav {
     padding: 10px;
     margin-bottom: 80px;
     text-align: center;
+    position: relative;
+    min-height: 40px;
 }
 
 .brand-icons>img {
@@ -101,24 +102,23 @@ nav {
     -webkit-transition: all .8s ease-in;
     transition: all .8s ease-in;
     opacity: 0.3;
-    height: 40px;
-    width: 40px;
+    width: 60%;
+    height: 60%;
+    margin: auto;
     position: absolute;
-    left: 46%;
-    background-position:center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
-.brand-icons {
-
-    img:hover {
-        
-    }
+.brand-icons:hover>img {
     opacity: 1;
     height: 80px;
     width: 80px;
 }
 
-.brand-icons >span {
+.brand-icons>span {
     -moz-transition: all .8s ease-in;
     -o-transition: all .8s ease-in;
     -webkit-transition: all .8s ease-in;
