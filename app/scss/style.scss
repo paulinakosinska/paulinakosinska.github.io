@@ -9,6 +9,11 @@ nav {
     width: 100%
 }
 
+.navbar-scrolled {
+    background-color: white;
+    z-index: 9999;
+}
+
 .brand-logo {
     font-size: 22px;
     letter-spacing: -1px;
@@ -30,7 +35,7 @@ nav {
 
 .hero {
     text-align: center;
-    background-image: url("/img/bg-img.jpg");
+    background-image: url("../img/bg-img.jpg");
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
@@ -154,6 +159,8 @@ nav {
 
 #number-one {
     background-color: #acacac;
+    background-image: url("../img/warsztaty.png");
+    background-size: cover;
 }
 
 #number-one:hover {
@@ -190,7 +197,6 @@ nav {
 
 #number-five {
     background-color: #ba6b6c;
-    background-image: url("/img/warsztaty.png");
 }
 
 #number-five:hover {
