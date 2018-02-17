@@ -6,12 +6,29 @@ html {
 
 nav {
     position: fixed !important;
-    width: 100%
+    width: 100%;
+    z-index: 9999;
+}
+
+.parallax {
+    
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#particles-js {
+    // height: 100%;
+    background-color: #ba6b6c;
+    background-image: url("img/image1.png");
 }
 
 .navbar-scrolled {
     background-color: white;
-    z-index: 9999;
 }
 
 .brand-logo {
@@ -35,27 +52,23 @@ nav {
 
 .hero {
     text-align: center;
-    background-image: url("../img/bg-img.jpg");
+    // background-image: url("../img/bg-img.jpg"); 
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
 }
 
 .hero-btn {
-    margin: auto;
     position: relative;
-    top: 80%;
     border-color: #575757;
     color: #575757;
+    margin-top: 150px;
 }
 
 .hero-btn:hover {
     background-color: #575757;
+    border-color: #575757;
     color: #fff;
-}
-
-.btn {
-    justify-content: center;
 }
 
 .section-header {
@@ -68,14 +81,9 @@ nav {
 .my-4 {
     width: 10%;
     padding-bottom: 40px;
-    color: #ef9a9a;
 }
 
 .about-me {
-    // margin-top: 10px;
-    // margin-bottom: 100px;
-    // margin-left: 40px;
-    // margin-right: 40px;
     text-align: center;
     padding-bottom: 200px;
     padding-top: 70px;
@@ -139,19 +147,7 @@ nav {
     clear: both;
 }
 
-.parallax {
-    // background-image: url("https://images.unsplash.com/photo-1502624210716-bf8740533f4c?auto=format&fit=crop&w=668&q=80");
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-#particles-js {
-    // height: 100%;
-    background-color: #ba6b6c;
-}
 
 #projects {
     margin-bottom: 100px;
@@ -159,8 +155,9 @@ nav {
 
 #number-one {
     background-color: #acacac;
-    background-image: url("../img/warsztaty.png");
-    background-size: cover;
+    background-image: url("../img/warsztaty_imac.png");
+    background-position: center;
+    background-size: 300px 220px;
 }
 
 #number-one:hover {
@@ -170,6 +167,9 @@ nav {
 
 #number-two {
     background-color: #e1e1e1;
+    background-image: url("../img/shopping_list.png");
+    background-position: center;
+    background-size: 300px 220px;
 }
 
 #number-two:hover {
