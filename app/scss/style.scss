@@ -10,30 +10,17 @@ nav {
     z-index: 9999;
 }
 
-.parallax {
-    
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    min-width: 100vw;
-}
-
-#particles-js {
-    // height: 100%;
-    background-color: #ba6b6c;
-    background-image: url("img/image1.png");
+// #particles-js {
+//     // height: 100%;
+//     background-color: #ba6b6c;
+//     background-image: url("img/image1.png");
+// }
+#navbar-logo {
+    display: none;
 }
 
 .navbar-scrolled {
     background-color: white;
-}
-
-.brand-logo {
-    font-size: 22px;
-    letter-spacing: -1px;
 }
 
 #title-wraper {
@@ -52,7 +39,7 @@ nav {
 
 .hero {
     text-align: center;
-    // background-image: url("../img/bg-img.jpg"); 
+    background-image: url("../img/bg-img.jpg"); 
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
@@ -83,17 +70,28 @@ nav {
     padding-bottom: 40px;
 }
 
-.about-me {
+.col {
     text-align: center;
     padding-bottom: 200px;
     padding-top: 70px;
 }
 
-.skills {
+#profile-picture {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#skills {
     background-color: #e1e1e1;
     font-size: 32px;
     font-weight: 200;
-    padding-bottom: 120px;
+    // padding-bottom: 120px;
 }
 
 .skills>span {
@@ -147,7 +145,23 @@ nav {
     clear: both;
 }
 
+.parallax {
+    height: 400px;
+    background-image: url("../img/image1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+#quote {
+    z-index: 1000;
+    color: #eee;
+    font-size: 44px;
+    font-weight: 100;
+    text-align: center;
+    
+}
 
 #projects {
     margin-bottom: 100px;
@@ -155,53 +169,35 @@ nav {
 
 #number-one {
     background-color: #acacac;
-    background-image: url("../img/warsztaty_imac.png");
+    background-image: url("../img/warsztaty.png");
     background-position: center;
-    background-size: 300px 220px;
-}
-
-#number-one:hover {
-    background-color: #eeeeee;
-    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 210px 200px;
 }
 
 #number-two {
     background-color: #e1e1e1;
-    background-image: url("../img/shopping_list.png");
-    background-position: center;
-    background-size: 300px 220px;
+    background-image: url("../img/portfolio.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 270px 180px;
 }
 
-#number-two:hover {
-    background-color: #eeeeee;
-    cursor: pointer;
-}
 
 #number-three {
     background-color: #e1e1e1;
-}
-
-#number-three:hover {
-    background-color: #eeeeee;
-    cursor: pointer;
 }
 
 #number-four {
     background-color: #acacac;
 }
 
-#number-four:hover {
-    background-color: #eeeeee;
-    cursor: pointer;
-}
-
 #number-five {
     background-color: #ba6b6c;
-}
-
-#number-five:hover {
-    background-color: #eeeeee;
-    cursor: pointer;
+    background-image: url("../img/shopping_list.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 360px;
 }
 
 .tile {
@@ -212,6 +208,21 @@ nav {
     transition: all .5s ease-in;
     text-align: center;
 }
+
+.tile:hover {
+    background-blend-mode: overlay;
+    background-color: #eeeeee !important;
+    cursor: pointer;
+}
+
+.tile>a {
+    opacity: 0;
+}
+
+.tile:hover>a {
+    opacity: 1;
+}
+
 
 .tile-sm {
     line-height: 200px;

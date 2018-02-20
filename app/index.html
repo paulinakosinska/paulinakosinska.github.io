@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 
     <title> Paulina Kosińska - Portfolio</title>
     <meta name="viewport" content="user-scalable=yes,width=device-width,initial-scale=1,maximum-scale=1">
@@ -31,8 +31,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
-        <!-- <nav class="navbar navbar-expand-lg navbar-light"> -->
-        <span class="navbar-brand" href="#">PAULINA
+        <span id="navbar-logo" class="navbar-brand wow fadeInUp">PAULINA
             <strong>KOSIŃSKA</strong>
         </span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -40,7 +39,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav wow fadeInRight">
                 <li class="nav-item active">
                     <a class="nav-link" href="#title-wraper">Home
                         <span class="sr-only">(current)</span>
@@ -59,148 +58,150 @@
         </div>
     </nav>
     <main>
-
-        <section class="hero parallax">
-            <div class="container container-fluid" id="title-wraper">
+        <!-- id="particles-js" class="hero parallax" -->
+        <section class="hero">
+            <div class="container container-fluid wow fadeInRight" id="title-wraper">
                 <h1 id="title">Paulina Kosińska</h1>
                 <span id="subtitle">Junior Front-end Developer</span>
             </div>
             <div>
-                <a class="btn btn-primary btn-lg btn-outline-dark hero-btn" href="#projects" role="button ">Check out my projects</a>
+                <a class="btn btn-primary btn-lg btn-outline-dark hero-btn wow fadeInUp" href="#projects" role="button ">Check out my projects</a>
             </div>
         </section>
 
         <section class="container">
-            <header class="section-header" id="about-me">About me</header>
+            <header class="section-header wow fadeInUp" id="about-me">About me</header>
             <hr class="my-4">
 
             <div class="row">
-                <div class="col col-md-6 about-me">
+                <div class="col col-12 col-md-6 wow fadeInLeft">
                     Fusce vitae accumsan quam, id sollicitudin ipsum. </br>
                     Nullam et dui mattis, mollis nibh ut, pharetra ante. </br>
                     Nam vehicula elementum sodales. Nulla pellentesque </br>
                     ex sed enim vestibulum sodales. </br>
                 </div>
-                <div class="col col-md-6 portfolio-img">
-                    <!-- <img src="img_square.jpeg" alt="My photo"> -->
+                <div class="col col-12 col-md-6 wow fadeInRight">
+                    <img id="profile-picture" src="img/profile-picture.png" alt="My photo">
                 </div>
 
             </div>
 
         </section>
 
-        <section class="skills">
-            <header class="section-header" id="skills">Skills</header>
+        <section id="skills">
+            <header class="section-header wow fadeInUp" id="skills">Skills</header>
             <hr class="my-4">
             <div class="row">
-                <div class="brand-icons col-md-4">
-                    <img src="img/html.svg">
+                <div class="brand-icons col-md-4 wow fadeInUp">
+                    <img src="img/html.svg" alt="html-icon">
                     <span>HTML5</span>
                 </div>
-                <div class="brand-icons col-md-4">
-                    <img src="img/CSS3.svg">
+                <div class="brand-icons col-md-4 wow fadeInUp">
+                    <img src="img/CSS3.svg" alt="css-icon">
                     <span>CSS3</span>
                 </div>
-                <div class="brand-icons col-md-4">
-                    <img src="img/javascript.svg">
+                <div class="brand-icons col-md-4 wow fadeInUp">
+                    <img src="img/javascript.svg" alt="js-icon">
                     <span>JAVASCRIPT</span>
                 </div>
 
             </div>
             <div class="row">
-                <div class="brand-icons col-md-4">
-                    <img src="img/jquery.svg">
+                <div class="brand-icons col-md-4 wow fadeInUp">
+                    <img src="img/jquery.svg" alt="jquery-icon">
                     <span>JQUERY</span>
                 </div>
-                <div class="brand-icons col-md-4">
-                    <img src="img/sass.svg">
+                <div class="brand-icons col-md-4 wow fadeInUp">
+                    <img src="img/sass.svg" alt="sass-icon">
                     <span>SASS</span>
                 </div>
-                <div class="brand-icons col-md-4">
-                    <img src="img/bootstrap.svg">
+                <div class="brand-icons col-md-4 wow fadeInUp">
+                    <img src="img/bootstrap.svg" alt="bootstrap-icon">
                     <span>BOOTSTRAP</span>
                 </div>
             </div>
             <div class="row">
-                <div class="brand-icons col-md-4">
-                    <img src="img/git.svg">
+                <div class="brand-icons col-md-4 wow fadeInUp">
+                    <img src="img/git.svg" alt="git-icon">
                     <span>GIT</span>
                 </div>
-                <div class="brand-icons col-md-4">
-                    <img src="img/gulp.svg">
+                <div class="brand-icons col-md-4 wow fadeInUp">
+                    <img src="img/gulp.svg" alt="gulp-icon">
                     <span>GULP</span>
                 </div>
-                <div class="brand-icons col-md-4">
-                    <img src="img/wordpress.svg">
+                <div class="brand-icons col-md-4 wow fadeInUp">
+                    <img src="img/wordpress.svg" alt="wordpress-icon">
                     <span>WORDPRESS</span>
                 </div>
             </div>
         </section>
 
 
-        <div id="particles-js" class="parallax"></div>
+        <div class="parallax">
+            <span id="quote" class="wow fadeInUp">"Talk is cheap. Show me the code." Linus Torvalds</span>
+        </div>
 
 
         <section class="container" id="projects">
-            <header class="section-header">Projects</header>
+            <header class="section-header wow fadeInUp">Projects</header>
             <hr class="my-4">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="tile tile-sm" id="number-one">
-                                    <a href="#" class="btn btn-live">LIVE</a>
+                            <div class="tile tile-sm wow fadeInLeft" id="number-one">
+                                <a href="#" class="btn btn-live" target="_blank">LIVE</a>
                                 <a href="https://github.com/paulinakosinska/Warsztaty-TDD" class="btn btn-code" target="_blank">CODE</a>
                             </div>
-                            <div class="tile tile-sm" id="number-two">
-                                    <a href="#" class="btn btn-live">LIVE</a>
-                                <a href="https://github.com/paulinakosinska/shopping_list" class="btn btn-code" target="_blank">CODE</a>
+                            <div class="tile tile-sm wow fadeInLeft" id="number-two">
+                                <a href="https://github.com/paulinakosinska/paulinakosinska.github.io" class="btn btn-code" target="_blank">CODE</a>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="tile tile-sm" id="number-three">
-                                    <a href="#" class="btn btn-live">LIVE</a>
-                                    <a href="#" class="btn btn-live">CODE</a>
+                            <div class="tile tile-sm wow fadeInLeft" id="number-three">
+                                <a href="#" class="btn btn-live" target="_blank">LIVE</a>
+                                <a href="https://github.com/paulinakosinska/PixelArtMaker_Udacity" class="btn btn-code" target="_blank">CODE</a>
                             </div>
-                            <div class="tile tile-sm" id="number-four">
-                                    <a href="#" class="btn btn-live">LIVE</a>
-                                    <a href="#" class="btn btn-live">CODE</a>
+                            <div class="tile tile-sm wow fadeInLeft" id="number-four">
+                                <a href="#" class="btn btn-live" target="_blank">LIVE</a>
+                                <a href="#" class="btn btn-code" target="_blank">CODE</a>
 
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="tile tile-lg" id="number-five">
-                        <a href="https://github.com/paulinakosinska/paulinakosinska.github.io" class="btn btn-code" target="_blank">CODE</a>
+                    <div class="tile tile-lg wow fadeInRight" id="number-five">
+                        <a href="#" class="btn btn-live" target="_blank">LIVE</a>
+                        <a href="https://github.com/paulinakosinska/shopping_list" class="btn btn-code" target="_blank">CODE</a>
                     </div>
                 </div>
             </div>
 
         </section>
+        <footer>
+            <div class="contact-me">
+                <header class="section-header wow fadeInUp" id="contact-me">Contact me</header>
+                <hr class="my-4">
+                <div class="wow fadeInUp">
+                    <a href="https://www.linkedin.com/in/paulina-kosi%C5%84ska-9aa1a9106/" target="_blank">
+                        <i id="social-li" class="fab fa-linkedin fa-10x social"></i>
+                    </a>
+                    <a href="https://github.com/paulinakosinska" target="_blank">
+                        <i id="social-gh" class="fab fa-github-square fa-10x social"></i>
+                    </a>
+                    <a href="https://www.facebook.com/kosinskapaulina" target="_blank">
+                        <i id="social-fb" class="fa fab fa-facebook-square fa-10x social"></i>
+                    </a>
+                    <a href="mailto:paulinakosinska95@gmail.com">
+                        <i id="social-em" class="fas fa-envelope-square fa-10x social"></i>
+                    </a>
+                </div>
+            </div>
 
-        <footer class="contact-me">
-            <header class="section-header" id="contact-me">Contact me</header>
-            <hr class="my-4">
-
-            <a href="https://www.linkedin.com/in/paulina-kosi%C5%84ska-9aa1a9106/" target="_blank">
-                <i id="social-li" class="fab fa-linkedin fa-10x social"></i>
-            </a>
-            <a href="https://github.com/paulinakosinska" target="_blank">
-                <i id="social-gh" class="fab fa-github-square fa-10x social"></i>
-            </a>
-            <a href="https://www.facebook.com/kosinskapaulina" target="_blank">
-                <i id="social-fb" class="fa fab fa-facebook-square fa-10x social"></i>
-            </a>
-            <a href="mailto:paulinakosinska95@gmail.com">
-                <i id="social-em" class="fas fa-envelope-square fa-10x social"></i>
-            </a>
-
-        </footer>
-
-        <footer class="footer">
-            &copy; Paulina Kosińska </br>
-            <a href="https://www.freepik.com/free-vector/bright-background-with-dots_1252906.htm">Background designed by Freepik</a>
+            <div class="footer">
+                &copy; Paulina Kosińska </br>
+                <a href="https://www.freepik.com/free-vector/bright-background-with-dots_1252906.htm">Background designed by Freepik</a>
 
             </div>
         </footer>
