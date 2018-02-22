@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
 const imageminMozjpeg = require('imagemin-mozjpeg'); 
+const webp = require('gulp-webp');
 
 gulp.task("scss", function () {
     return gulp.src('app/scss/*.scss')
@@ -27,11 +28,7 @@ gulp.task('watch', ['browserSync'], function(){
   }); 
 
   gulp.task('images', function(){
-    return gulp.src('app/img_raw/**/*.+(png|jpg)')
-    .pipe(imagemin([
-      imageminMozjpeg({
-        quality: 50
-      })
-    ]))
+    return gulp.src('app/img_raw/**/*.+(png|jpg|svg)')
+    .pipe(webp())
     .pipe(gulp.dest('app/img'))
   });
