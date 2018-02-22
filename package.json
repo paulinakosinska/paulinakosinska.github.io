@@ -12,7 +12,8 @@
     "browser-sync": "^2.23.5",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
-    "gulp-sass": "^3.1.0"
+    "gulp-sass": "^3.1.0",
+    "imagemin-mozjpeg": "^7.0.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
