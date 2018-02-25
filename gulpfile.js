@@ -29,5 +29,6 @@ gulp.task('watch', ['browserSync'], function(){
 
   gulp.task('images', function(){
     return gulp.src('app/img_raw/**/*.+(png|jpg|svg)')
+    .pipe(gulpMozjpeg())
     .pipe(gulp.dest('app/img'))
   });
