@@ -1,4 +1,9 @@
+.navbar-brand {
+    visibility: unset;
+}
+
 @import "node_modules/bootstrap/scss/bootstrap";
+
 html {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -10,12 +15,13 @@ nav {
     z-index: 9999;
 }
 
-#navbar-logo {
-    visibility: hidden !important;
+.hidden {
+    visibility: hidden;
 }
 
 .navbar-scrolled {
     background-color: white;
+    opacity: 0.9;
 }
 
 #title-wraper {
@@ -87,7 +93,6 @@ nav {
     background-color: #e1e1e1;
     font-size: 32px;
     font-weight: 200;
-    // padding-bottom: 120px;
 }
 
 .skills>span {
