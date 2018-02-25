@@ -32,10 +32,10 @@ gulp.task('images', function () {
   return gulp.src('app/img_raw/**/*.+(png|jpg|svg)')
     .pipe(imagemin([
       imageminMozjpeg({
-        quality: 30
+        quality: 60
       }),
       imageminMozpng({
-        quality: 30
+        quality: 90
       })
     ]))
     .pipe(gulp.dest('app/img'))
