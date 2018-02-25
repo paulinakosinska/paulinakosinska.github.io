@@ -4,6 +4,6 @@ $(window).scroll(function () {
         $("#navbar-logo").css("display", "inline");
     } else {
         $(".navbar").removeClass('navbar-scrolled');
-        $("#navbar-logo").css("display", "none");
+        $("#navbar-logo").css("visibility", "hidden");
     }
 });
