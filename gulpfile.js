@@ -18,6 +18,7 @@ gulp.task("scss", function () {
 gulp.task('watch', ['browserSync'], function () {
   gulp.watch('app/scss/**/*.scss', ['scss']);
   gulp.watch('app/index.html', browserSync.reload);
+  gulp.watch('app/js/script.js', browserSync.reload);
 });
 
 gulp.task('browserSync', function () {
