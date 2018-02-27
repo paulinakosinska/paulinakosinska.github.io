@@ -15,6 +15,21 @@ nav {
     z-index: 9999;
 }
 
+.navbar-nav > li {
+    float: left;
+    position: relative;
+  }
+
+.underline-link::after {
+    border-bottom: 5px solid #ba6b6c;
+    bottom: +10px;
+    content: " ";
+    left: 10px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
 .hidden {
     visibility: hidden;
 }
@@ -74,14 +89,15 @@ nav {
 
 .col {
     text-align: center;
-    padding-bottom: 200px;
-    padding-top: 70px;
+    padding-bottom: 12em;
+    padding-top: 3em;
+    line-height: 2.0em;
 }
 
 #profile-picture {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 17em;
+    height: 17em;
     position: absolute;
     margin: auto;
     top: 0;
