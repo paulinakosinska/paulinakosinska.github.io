@@ -61,16 +61,14 @@ nav {
     background-attachment: fixed;
 }
 
-@media only screen and (min-device-width: 320px) 
-and (max-device-width: 568px) {
+@media only screen and (max-width: 320px) {
     .hero {
         background: url("../img/bg-img-mobile.jpg");
         background-size: cover;
     }
     .parallax {
-        background-image: url("../img/image1-mobile.jpg");
-        background-size: contain;
-        background-position: center;
+        background-image: url("../img/image1-mobile.jpg") !important;
+        background-size: cover;
     }
 }
 
@@ -173,11 +171,6 @@ and (max-device-width: 568px) {
     clear: both;
 }
 
-// @media only screen and (min-device-width: 320px) 
-// and (max-device-width: 480px) {
-   
-// }
-
 .parallax {
     height: 400px;
     background-image: url("../img/image1.jpg");
@@ -188,7 +181,6 @@ and (max-device-width: 568px) {
 }
 
 .parallax > p {
-    z-index: 1000;
     color: #eee;
     font-size: 44px;
     font-weight: 100;
