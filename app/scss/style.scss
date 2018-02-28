@@ -11,7 +11,7 @@ html {
 
 nav {
     position: fixed !important;
-    width: 100%;
+    min-width: 100vw;
     z-index: 9999;
 }
 
@@ -21,13 +21,12 @@ nav {
   }
 
 .underline-link::after {
-    border-bottom: 5px solid #ba6b6c;
-    bottom: +10px;
+    border-bottom: 4px solid #ba6b6c;
+    bottom: 0;
     content: " ";
-    left: 10px;
+    left: 0;
     position: absolute;
     right: 0;
-    z-index: -1;
   }
 
 .hidden {
@@ -62,11 +61,24 @@ nav {
     background-attachment: fixed;
 }
 
+@media only screen and (min-device-width: 320px) 
+and (max-device-width: 568px) {
+    .hero {
+        background: url("../img/bg-img-mobile.jpg");
+        background-size: cover;
+    }
+    .parallax {
+        background-image: url("../img/image1-mobile.jpg");
+        background-size: contain;
+        background-position: center;
+    }
+}
+
 .hero-btn {
     position: relative;
     border-color: #575757;
     color: #575757;
-    margin-top: 150px;
+    margin-top: 6em;
 }
 
 .hero-btn:hover {
@@ -84,21 +96,20 @@ nav {
 
 .my-4 {
     width: 10%;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .col {
     text-align: center;
-    padding-bottom: 12em;
+    padding-bottom: 6em;
     padding-top: 3em;
     line-height: 2.0em;
 }
 
 #profile-picture {
     border-radius: 50%;
-    width: 17em;
-    height: 17em;
-    position: absolute;
+    width: 15em;
+    height: 15em;
     margin: auto;
     top: 0;
     left: 0;
@@ -162,6 +173,11 @@ nav {
     clear: both;
 }
 
+// @media only screen and (min-device-width: 320px) 
+// and (max-device-width: 480px) {
+   
+// }
+
 .parallax {
     height: 400px;
     background-image: url("../img/image1.jpg");
@@ -221,7 +237,7 @@ nav {
 }
 
 .tile {
-    margin-bottom: 30px; // transition animation
+    margin-bottom: 30px;
     -moz-transition: all .5s ease-in;
     -o-transition: all .5s ease-in;
     -webkit-transition: all .5s ease-in;
